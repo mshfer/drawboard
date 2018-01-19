@@ -13,3 +13,4 @@ It works on every platform, browser or device, focusing equally on reliability a
 * cd into ../drawboard/server
     * _npm install express --save_
     * _npm install socket.io --save_
+    * _node server.js_
