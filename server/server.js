@@ -18,4 +18,12 @@ var io = socket(server);
 io.sockets.on('connection', newConnection);
 function newConnection(socket) {
   console.log("A client connected: " + socket.id);
+
+  // receive mouseEvent
+  socket.on('mouseEvent', mouseEvent);
+
+  // send the received data to clients
+  function mouseEvent(data) {
+    socket.broadcast.emit('mouseEvent', data);
+  }
 }
