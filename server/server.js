@@ -4,5 +4,5 @@ var express = require('express');
 var app = express();
 // listen to port 3000 on localhost
 var server = app.listen(3000);
-// host everything in 'server'-folder accessible from the clients
+// host everything in 'client'-folder accessible from the clients
 app.use(express.static('../client'));
