@@ -14,3 +14,4 @@ It works on every platform, browser or device, focusing equally on reliability a
     * _npm install express --save_
     * _npm install socket.io --save_
     * _node server.js_
+* open browser on http://localhost:3000
