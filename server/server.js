@@ -6,3 +6,16 @@ var app = express();
 var server = app.listen(3000);
 // host everything in 'client'-folder accessible from the clients
 app.use(express.static('../client'));
+
+// print to console
+console.log("Server is running");
+
+// store the function in a variable called socket
+var socket = require('socket.io');
+// make a new socket connection
+var io = socket(server);
+// on connect
+io.sockets.on('connection', newConnection);
+function newConnection(socket) {
+  console.log("A client connected: " + socket.id);
+}
