@@ -1,0 +1,1 @@
+D:\Dateien\Dokumente\github\drawboard\client\dotnet\SocketIOClient\SocketIOClient\bin\Debug\SocketIOClient.exe.config
